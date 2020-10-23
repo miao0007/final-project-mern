@@ -2,7 +2,6 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const passport = require('passport');
-// const path = require('path');
 const axios = require('axios');
 const users = require('./routes/users');
 const profile = require('./routes/profile');
@@ -12,7 +11,7 @@ const app = express();
 
 require('dotenv').config();
 
-// process.env.apiKey
+
 
 // Body parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -21,16 +20,7 @@ app.use(bodyParser.json());
 const mongoUri = process.env.MONGODB_URI || 'mongodb://localhost/stuff';
 
 mongoose.connect(mongoUri, { useNewUrlParser: true });
-// DB Config
-// const db = require('./config/keys').mongoURI;
-// Connect to MongoDB
-// mongoose
-//   .connect(
-//     db,
-//     { useNewUrlParser: true },
-//   )
-//   .then(() => console.log('MongoDB Connected'))
-//   .catch(err => console.log(err));
+
 
 // Passport middleware
 app.use(passport.initialize());
@@ -55,7 +45,7 @@ app.get('/api/books/:search', (req, res) => {
     .catch((error) => {
       console.log(error);
     });
-  // res.send("it worked")
+  
 });
 
 // Send every other request to the React app
