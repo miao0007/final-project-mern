@@ -23,7 +23,7 @@ class Landing extends Component {
 					<Grid centered columns={2}>
 						<Grid.Row centered>
 							<Opacity>
-								<Header as="h1"><span className="header">Book Club</span></Header>
+								<Header as="h1"><span className="header">Reader Tribe</span></Header>
 								<Header as="h3"><span className="slogan">The book is always, always better.
 									</span></Header>
 									<Button color="green" as={Link} to="/login">
