@@ -24,3 +24,10 @@
       margin-top: 1rem;
     margin-bottom: 3rem;
   }
+  .create-profile {
+      color: yellowgreen;
+      font-size: 16px;
+  }
+  .create-link {
+      color: #fff;
+  }

@@ -57,8 +57,8 @@ class Dashboard extends Component {
 				// User logged in but no profile
 				dashboardContent = (
 					<div>
-						<p>Please create your profile.</p>
-						<Link to="/create-profile"> Create Profile </Link>
+						<p className = 'create-profile'>Please create your profile.</p>
+						<Link to="/create-profile"><span className = 'create-link'>Create Profile</span>  </Link>
 					</div>
 				);
 			}
