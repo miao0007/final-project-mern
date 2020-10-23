@@ -1,6 +1,4 @@
-.three {
-    background-color: #f40;
-}
+
 
 .menu {
     background-color: rgb(43, 5, 78);
@@ -13,4 +11,7 @@
 }
 div .three{
     background-color: blueviolet;
+}
+.ui.stackable.menu.three {
+    font-size: 20px;
 }

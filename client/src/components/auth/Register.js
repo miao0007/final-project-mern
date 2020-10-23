@@ -70,6 +70,7 @@ class Register extends Component {
 							
 							<Form.Input
 								placeholder="Name"
+								label="Name"
 								name="name"
 								type="name"
 								value={this.state.name}
@@ -78,6 +79,7 @@ class Register extends Component {
 							<Message error content={errors.name} />
 							<Form.Input
 								placeholder="Email Address"
+								label="E-Mail"
 								name="email"
 								type="email"
 								value={this.state.email}
@@ -87,6 +89,7 @@ class Register extends Component {
 							<Message error content={errors.email} />
 							<Form.Input
 								placeholder="Password"
+								label="Password"
 								name="password"
 								type="password"
 								value={this.state.password}
@@ -95,6 +98,7 @@ class Register extends Component {
 							<Message error content={errors.password} />
 							<Form.Input
 								placeholder="Confirm Password"
+								label="Confirm Password"
 								name="password2"
 								type="password"
 								value={this.state.password2}

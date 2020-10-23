@@ -76,8 +76,8 @@ class Navbar extends Component {
 		);
 
 		return (
-			<Segment className="three" blue inverted>
-				<Menu className="ui stackable menu blue three" inverted secondary>
+			<Segment className="three" color='violet' inverted>
+				<Menu className="ui stackable menu three" color='violet' inverted secondary>
 					<Menu.Item
 						className="item"
 						as={Link}

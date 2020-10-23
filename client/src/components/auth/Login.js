@@ -11,8 +11,8 @@ import {
 	Grid,
 	Message,
 	Header,
-	Segment,
-	Divider
+	Segment
+	// Divider
 } from 'semantic-ui-react';
 
 class Login extends Component {
@@ -67,6 +67,7 @@ class Login extends Component {
 						<Segment piled>
 							<Form.Input
 								placeholder="Email Address"
+								label="Your E-Mail"
 								name="email"
 								type="email"
 								value={this.state.email}
@@ -78,6 +79,7 @@ class Login extends Component {
 
 							<Form.Input
 								placeholder="Password"
+								label="Password"
 								name="password"
 								type="password"
 								value={this.state.password}
