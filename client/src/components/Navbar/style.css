@@ -1,0 +1,16 @@
+.three {
+    background-color: #f40;
+}
+
+.menu {
+    background-color: rgb(43, 5, 78);
+    height:80px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: cursive;
+    
+
+}
+div .three{
+    background-color: blueviolet;
+}

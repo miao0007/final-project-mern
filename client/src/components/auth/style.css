@@ -1,0 +1,12 @@
+.container {
+    background-image: url('../../image/wood-background.png');
+    height: 100vh;
+   
+}
+.title {
+color:#f40;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.form {
+    background-color: wheat;
+}

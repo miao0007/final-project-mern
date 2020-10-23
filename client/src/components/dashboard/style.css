@@ -1,0 +1,26 @@
+.welcome {
+    color: yellow;
+    font-size: larger;
+}
+.title {
+    color: #f40;
+}
+.bookshelf {
+    color: rgb(149, 229, 163);
+    font-family: 'Special Elite', cursive;
+}
+.polygon {
+    clip-path: polygon(5% 8%, 3% 28%, 3% 71%, 97% 72%, 97% 28%, 95% 8%);
+    background: linear-gradient(to bottom, #b99c86, #753d13 32% 100%);
+    width: auto;
+    height: 80px;
+    z-index: 1;
+  }
+
+  .buttons {
+      margin-top: 1em;
+  }
+  .delete {
+      margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
