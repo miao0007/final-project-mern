@@ -2,3 +2,21 @@
     font-size: 20px;
     color: black;
 }
+.search-form {
+    margin-bottom: 2em;
+}
+.book-title {
+color: rgb(34, 233, 67);
+}
+.sub-title {
+    color: khaki;
+    font-size: 20px;
+}
+.description {
+    color:rgb(232, 243, 201);
+    font-size: 16px;
+    margin-left: 2em;
+}
+.available {
+    color: orangered;
+}

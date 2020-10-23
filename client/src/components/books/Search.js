@@ -41,7 +41,9 @@ class Search extends Component {
 
 		return (
 			<div>
+				<div className='search-form'>
 				<Form>
+				
 					<p className='search'>Search by title or author</p>
 					<Form.Field width="8">
 						<input
@@ -56,6 +58,8 @@ class Search extends Component {
 						Search
 					</Button>
 				</Form>
+				</div>
+				
 
 				<Grid textAlign="center" stackable>
 					{bookResults}

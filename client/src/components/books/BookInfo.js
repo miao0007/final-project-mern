@@ -17,27 +17,27 @@ const BookInfo = ({ book, onClick }) => {
 
 			<Grid.Column textAlign="left">
 				<Container fluid>
-					<Header as="h2">{book.volumeInfo.title}</Header>
-					<Header as="h4">{book.volumeInfo.subtitle}</Header>
+					<Header as="h2"><span className='book-title'>{book.volumeInfo.title}</span></Header>
+					<Header as="h4"><span className='sub-title'>{book.volumeInfo.subtitle}</span></Header>
 					{!book.volumeInfo.description ? (
 						<Warning>No Info Available</Warning>
 					) : (
-							<p>{book.volumeInfo.description.replace(regex, '')}</p>
+							<p className='description'>{book.volumeInfo.description.replace(regex, '')}</p>
 						)}
-					{book.saleInfo.isEbook ? 'Ebook Available ' : 'No Ebook Available'}
-					<br />
+					<span className='available'>{book.saleInfo.isEbook ? 'Ebook Available ' : 'No Ebook Available'}</span>
+					<br /><br />
 					{book.saleInfo.isEbook && (
 						<Button
 							as="a"
 							href={book.saleInfo.buyLink}
-							basic
+							variant="primary"
 							color="blue"
 							target="_blank"
 						>
 							Buy
 						</Button>
 					)}
-					<Button onClick={onClick} basic color="blue">
+					<Button onClick={onClick} variant="primary" color="blue">
 						Save to Bookshelf
 					</Button>
 				</Container>

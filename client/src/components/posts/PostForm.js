@@ -44,7 +44,7 @@ class PostForm extends Component {
 		return (
 			<div>
 				<div className='header'><Header as="h2">
-					<span className='discuss'>Add a topic to discuss</span>
+					<span className='discuss'>Post a topic to discuss</span>
 					</Header></div>
 				
 				<Form onSubmit={this.onSubmit} error>
