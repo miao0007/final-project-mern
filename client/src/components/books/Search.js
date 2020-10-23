@@ -7,7 +7,7 @@ import { searchedBooks } from '../../actions/bookActions';
 import BookList from './BookList';
 
 import { Button, Form, Grid } from 'semantic-ui-react';
-
+import './style.css';
 class Search extends Component {
 	state = {
 		search: '',
@@ -42,7 +42,7 @@ class Search extends Component {
 		return (
 			<div>
 				<Form>
-					<p>Search by title or author</p>
+					<p className='search'>Search by title or author</p>
 					<Form.Field width="8">
 						<input
 							onChange={this.onChange}
@@ -52,7 +52,7 @@ class Search extends Component {
 							value={this.state.search}
 						/>
 					</Form.Field>
-					<Button className="ui black basic button" onClick={this.searchBooks}>
+					<Button className="ui black button" variant="success" color = 'green' onClick={this.searchBooks}>
 						Search
 					</Button>
 				</Form>

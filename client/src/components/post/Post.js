@@ -9,7 +9,7 @@ import Spinner from '../common/Spinner';
 
 import { connect } from 'react-redux';
 import { getPost } from '../../actions/postActions';
-
+import './style.css';
 class Post extends Component {
 	UNSAFE_componentDidMount() {
 		this.props.getPost(this.props.match.params.id);
