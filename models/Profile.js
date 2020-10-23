@@ -49,17 +49,17 @@ const ProfileSchema = new Schema({
       },
     },
   ],
-  social: {
-    instagram: {
-      type: String,
-    },
-    facebook: {
-      type: String,
-    },
-    twitter: {
-      type: String,
-    },
-  },
+  // social: {
+  //   instagram: {
+  //     type: String,
+  //   },
+  //   facebook: {
+  //     type: String,
+  //   },
+  //   twitter: {
+  //     type: String,
+  //   },
+  // },
   date: {
     type: Date,
     default: Date.now(),
