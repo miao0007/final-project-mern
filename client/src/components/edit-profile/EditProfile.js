@@ -91,8 +91,8 @@ class CreateProfile extends Component {
 
 		return (
 			<div>
-				<Link to="/dashboard">Go Back</Link>
-				<h1>Edit Profile</h1>
+				<Link to="/dashboard"><span className='back'> Go Back</span></Link>
+				<h1 className='edit'>Edit Profile</h1>
 
 				<Form onSubmit={this.onSubmit} error>
 					<Form.Input

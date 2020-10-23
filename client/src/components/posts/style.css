@@ -1,0 +1,22 @@
+.discuss {
+    color:  rgb(149, 229, 163);
+    font-family: 'Special Elite', cursive;
+}
+.header {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.thumb {
+    margin-bottom: 1px;
+}
+.from {
+    color:#f40;
+    font-family: monospace;
+    font-size: 22px;
+}
+.name {
+    color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}

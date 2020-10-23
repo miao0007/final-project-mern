@@ -1,0 +1,11 @@
+.back {
+    color: aliceblue;
+    margin-left: 2em;
+}
+
+.edit {
+    color:  rgb(149, 229, 163);
+    text-align: center;
+    margin-bottom: 3em;
+    font-family: 'Special Elite', cursive;
+}

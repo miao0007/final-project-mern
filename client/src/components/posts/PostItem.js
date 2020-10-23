@@ -42,15 +42,16 @@ class PostItem extends Component {
 								<Card.Content>
 									<br />
 									<Image src={post.avatar} floated="right" size="mini" />
-									<Card.Header>{post.name}</Card.Header>
+									<Card.Header><span className = 'from'>From: </span><span className='name'>{post.name}</span></Card.Header>
 									<Card.Description as="h2" textAlign="center">
 										{post.text}
 									</Card.Description>
 									<br />
 									<div>
 										{showActions ? (
+											
 											<SpanSpacing>
-												<button
+												<div className='thumb'><button
 													onClick={this.onLikeClick.bind(this, post._id)}
 													type="button"
 												>
@@ -62,12 +63,13 @@ class PostItem extends Component {
 													type="button"
 												>
 													<Icon name="thumbs down" />
-												</button>
+												</button></div>
+												
 												<SpanSpacing>
 													<br />
 													<Button
 														size="small"
-														basic
+														variant="primary"
 														color="blue"
 														as={Link}
 														to={`/post/${post._id}`}
@@ -77,7 +79,7 @@ class PostItem extends Component {
 												</SpanSpacing>
 												{post.user === auth.user.id ? (
 													<Button
-														basic
+													variant="primary"
 														color="red"
 														onClick={this.onDeleteClick.bind(this, post._id)}
 														type="button"

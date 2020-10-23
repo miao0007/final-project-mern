@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-// import TextAreaFieldGroup from '../common/TextAreaFieldGroup';
-
 import { connect } from 'react-redux';
 import { addPost } from '../../actions/postActions';
 
 import { Button, Form, Message, Header } from 'semantic-ui-react';
+import './style.css';
 
 class PostForm extends Component {
 	state = {
@@ -44,7 +43,10 @@ class PostForm extends Component {
 
 		return (
 			<div>
-				<Header as="h2">Add a topic to discuss</Header>
+				<div className='header'><Header as="h2">
+					<span className='discuss'>Add a topic to discuss</span>
+					</Header></div>
+				
 				<Form onSubmit={this.onSubmit} error>
 					<Form.Input
 						name="text"

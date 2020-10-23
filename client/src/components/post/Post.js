@@ -35,7 +35,7 @@ class Post extends Component {
 
 		return (
 			<div>
-				<Link to="/discuss">Back To Feed</Link>
+				<Link to="/discuss"><span className='back'>Back To Feed</span></Link>
 				{postContent}
 			</div>
 		);
