@@ -59,17 +59,16 @@ class Navbar extends Component {
 			<Menu.Menu position="right">
 				<Menu.Item
 					as={Link}
-					to="/register"
-					name="Sign Up"
-					active={activeItem === 'Sign Up'}
-					onClick={this.handleItemClick}
-				/>
-
-				<Menu.Item
-					as={Link}
 					to="/login"
 					name="Login"
 					active={activeItem === 'Login'}
+					onClick={this.handleItemClick}
+				/>
+				<Menu.Item
+					as={Link}
+					to="/register"
+					name="Sign Up"
+					active={activeItem === 'Sign Up'}
 					onClick={this.handleItemClick}
 				/>
 			</Menu.Menu>
@@ -82,7 +81,7 @@ class Navbar extends Component {
 						className="item"
 						as={Link}
 						to="/profiles"
-						name="Book Club Members"
+						name="Our Members"
 						active={activeItem === 'Book Club Members'}
 						onClick={this.handleItemClick}
 					/>
@@ -90,7 +89,7 @@ class Navbar extends Component {
 					<Menu.Item
 						as={Link}
 						to="/books"
-						name="Search For Books"
+						name="Search a Book"
 						className="item"
 						active={activeItem === 'Search For Books'}
 						onClick={this.handleItemClick}

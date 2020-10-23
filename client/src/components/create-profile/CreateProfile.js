@@ -6,7 +6,7 @@ import { Button, Form, Grid, Message, Header } from 'semantic-ui-react';
 
 import { connect } from 'react-redux';
 import { createProfile } from '../../actions/profileActions';
-
+import './style.css';
 class CreateProfile extends Component {
 	state = {
 		displaySocialInputs: false,
@@ -47,13 +47,14 @@ class CreateProfile extends Component {
 			<Grid verticalAlign="middle" centered columns={2}>
 				<Grid.Column>
 					<Header as="h2" color="blue" textAlign="center">
-						Create your profile
+						<span className='create-profile'>Create your profile</span>
 					</Header>
-					<small>* = required fields</small>
+					<small className = 'small'>* = required fields</small>
 					<Form onSubmit={this.onSubmit}>
 						<Form.Input
 							placeholder="* Username"
 							name="username"
+							label='Username'
 							value={this.state.username}
 							onChange={this.onChange}
 							error={errors.username}
@@ -62,6 +63,7 @@ class CreateProfile extends Component {
 						<Message error content={errors.username} />
 						<Form.Input
 							placeholder="* Favorite Genres"
+							label='Favorite Genres'
 							name="genres"
 							value={this.state.genres}
 							onChange={this.onChange}
@@ -71,6 +73,7 @@ class CreateProfile extends Component {
 						<Message error content={errors.genres} />
 						<Form.Input
 							placeholder="Short Bio"
+							label='Short Bio'
 							name="bio"
 							value={this.state.bio}
 							onChange={this.onChange}

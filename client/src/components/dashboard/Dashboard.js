@@ -39,8 +39,8 @@ class Dashboard extends Component {
 				dashboardContent = (
 					<div>
 						<h1 className='welcome'>
-							Welcome:
-							<Link to={`/profile/${profile.username}`}>{user.name}</Link>
+							Welcome: 
+							<Link to={`/profile/${profile.username}`}><span className='user-name'>{user.name}</span></Link>
 						</h1>
 						<Grid stackable columns={3}>
 							<ProfileActions />
