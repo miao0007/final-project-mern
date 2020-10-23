@@ -17,9 +17,12 @@ require('dotenv').config();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-const mongoUri = process.env.MONGODB_URI || 'mongodb://localhost/stuff';
 
-mongoose.connect(mongoUri, { useNewUrlParser: true });
+
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/stuff", { useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+  useFindAndModify: false });
 
 
 // Passport middleware
@@ -68,5 +71,5 @@ if (process.env.NODE_ENV === 'production') {
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log(`Magic happening on port ${PORT} `);
+  console.log(`Server started listening on port ${PORT} `);
 });
