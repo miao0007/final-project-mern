@@ -6,7 +6,7 @@ const axios = require('axios');
 const users = require('./routes/users');
 const profile = require('./routes/profile');
 const posts = require('./routes/posts');
-
+const PORT = process.env.PORT || 5000;
 const app = express();
 
 require('dotenv').config();
@@ -69,7 +69,7 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
 }
 
-const PORT = process.env.PORT || 5000;
+
 app.listen(PORT, () => {
   console.log(`Server started listening on port ${PORT} `);
 });
