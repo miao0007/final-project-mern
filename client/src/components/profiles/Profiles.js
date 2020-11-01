@@ -32,7 +32,7 @@ class Profiles extends Component {
 
 		return (
 			<div>
-				<h1>Book Club Profiles</h1>
+				<h1 className='title'>Book Club Profiles</h1>
 				<Grid doubling columns={3}>
 					{profileItems}
 				</Grid>

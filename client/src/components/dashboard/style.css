@@ -1,4 +1,5 @@
 .welcome {
+    margin-left: 1em;
     color: yellow;
     font-size: larger;
 }
@@ -24,6 +25,7 @@ color: springgreen;
 
   .buttons {
       margin-top: 1em;
+      margin-left: 1em;
   }
   .delete {
       margin-top: 1rem;

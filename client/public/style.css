@@ -1,8 +1,9 @@
 body {
     margin: auto;
+    background-color: yellow;
     
 }
 
 #root {
-/* background-color: rgb(30, 4, 54); */
+background-color: rgb(41, 5, 41);
 }
